@@ -1,5 +1,8 @@
 module aoc
 
-# Write your package code here.
+include("day.jl")
+include("day1.jl")
+include("day2.jl")
+
 
 end
