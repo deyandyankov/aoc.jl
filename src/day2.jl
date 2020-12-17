@@ -31,7 +31,19 @@ function valid(input::InputDay2)
     (occurances >= input.min) && (occurances <= input.max)
 end
 
+function valid_part2(input::InputDay2)
+    pos1, pos2, c = input.min, input.max, input.sym
+    xor(input.pwd[pos1] == c, input.pwd[pos2] == c)
+end
+
+
 function solve(day::Type{Day2})
     input = readinput(day)
     sum(valid.(input))
+end
+
+
+function part2(day::Type{Day2})
+    input = readinput(day)
+    sum(valid_part2.(input))
 end
