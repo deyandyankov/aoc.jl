@@ -12,11 +12,10 @@ function readinput(::Type{Day3})
     InputDay3(vcat(m'...))
 end
 
-function traverse(input::InputDay3)
+function traverse(input::InputDay3, step)
     path = []
     m, n = size(input.m)
     idx = [1, 1]
-    step = [1, 3]
     while idx[1] <= m
         r, c = idx
         if c > n
@@ -31,6 +30,22 @@ end
 
 function solve(day::Type{Day3})
     input = readinput(day)
-    path = traverse(input)
+    path = traverse(input, [1, 3])
     sum(path)
+end
+
+function solve_part2(day::Type{Day3})
+    input = readinput(day)
+    steps = [
+        [1, 1],
+        [1, 3],
+        [1, 5],
+        [1, 7],
+        [2, 1]
+    ]
+    path = 1
+    for step in steps
+        path *= sum(traverse(input, step))
+    end
+    path
 end
