@@ -9,4 +9,6 @@ include("day5.jl")
 include("day6.jl")
 include("day7.jl")
 
+include("day10.jl")
+aoc.
 end
