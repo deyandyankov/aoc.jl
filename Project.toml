@@ -4,14 +4,17 @@ authors = ["deyandyankov <deyandyankov> and contributors"]
 version = "0.1.0"
 
 [deps]
+BitBasis = "50ba71b6-fa0f-514d-ae9a-0916efc90dcf"
 Cairo = "159f3aea-2a34-519c-b102-8c37f9878175"
 Compose = "a81c6b42-2e10-5240-aca2-a61377ecd94b"
+Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
 FFMPEG = "c87230d0-a227-11e9-1b43-d7ebe4e7570a"
 GraphPlot = "a2cc645c-3eea-5389-862e-a155d0052231"
 GraphRecipes = "bd48cda9-67a9-57be-86fa-5b3c104eda73"
 LightGraphs = "093fc24a-ae57-5d10-9952-331d41423f4d"
 Luxor = "ae8d54c2-7ccd-5906-9d76-62fc9837b5bc"
 MetaGraphs = "626554b9-1ddb-594c-aa3c-2596fe9399a5"
+Permutations = "2ae35dd2-176d-5d53-8349-f30d82d94d4f"
 SimpleWeightedGraphs = "47aef6b3-ad0c-573a-a1e2-d07658019622"
 StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
 TikzGraphs = "b4f28e30-c73f-5eaf-a395-8a9db949a742"
